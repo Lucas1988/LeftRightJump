@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeftRightJump</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    #game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #instructions {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <audio id="meowAudio" src="meow.mp3"></audio>
+    <audio id="bulletAudio" src="bullet.mp3"></audio>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <p id="instructions">Welcome to LeftRightJump! Control the rabbit by saying 'left', 'right', or 'jump' <br>to avoid the cats and bullets.</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
